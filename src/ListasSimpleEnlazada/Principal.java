@@ -1,5 +1,7 @@
 package ListasSimpleEnlazada;
 
+import javax.swing.JOptionPane;
+
 public class Principal {
 	public static void main(String[] args) {
 		Libros plumas=new Libros();
