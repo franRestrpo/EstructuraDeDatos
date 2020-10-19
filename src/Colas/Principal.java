@@ -10,6 +10,9 @@ public class Principal  {
 	cola.Encolar(trabajo);
 	cola.Encolar(trabajo1);
 	cola.Encolar(trabajo2);
+	cola.Eliminar();
+	cola.Obtener();
+	System.out.println("Ejecucion de colas en java");
 	
 	}
 

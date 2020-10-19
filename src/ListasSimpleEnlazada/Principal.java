@@ -1,6 +1,5 @@
 package ListasSimpleEnlazada;
 
-import javax.swing.JOptionPane;
 
 public class Principal {
 	public static void main(String[] args) {
@@ -16,10 +15,18 @@ public class Principal {
 		picos.setId(3);
 		picos.setNombre("tercero");
 		
-		lista.InsertarAlPrincipio(plumas);
+		lista.InsertarAlPrincipio(picos);
 		lista.InsertarAlPrincipio(gabiota);
-		lista.InsertarDespues(0, picos);
-		lista.EliminarElPrincipio();
+		lista.InsertarAlPrincipio(plumas);
+
+		lista.MostrarOrden();
+		lista.InsertarDespues(2, picos);
+		lista.MostrarOrden();
+		lista.EliminarElFinal();
+		lista.MostrarOrden();
+		System.out.println("Ejecucion de listas");
+		
 	}
+	
 
 }

@@ -1,14 +1,32 @@
 package ListasSimpleEnlazada;
 
 public class Listas {
+
 	private Nodo cabeza = null;
 	private int cantidadLibros = 0;
+
+	private class Nodo {
+		public Libros libro;
+		public Nodo siguiente = null;
+
+		public Nodo(Libros lib) {
+			this.libro = lib;
+
+		}
+
+		@Override
+		public String toString() {
+			return "Nodo@" + libro + ":: Posición " + Integer.toHexString(hashCode());
+		}
+
+	}
 
 	public void InsertarAlPrincipio(Libros libro) {
 		Nodo nodo = new Nodo(libro);
 		nodo.siguiente = cabeza;
 		cabeza = nodo;
 		cantidadLibros++;
+
 	}
 
 	public void InsertarAlFinal(Libros libro) {
@@ -103,7 +121,7 @@ public class Listas {
 				cabeza = cabeza.siguiente;
 				primero.siguiente = null;
 				cantidadLibros--;
-			} else if (n<cantidadLibros){
+			} else if (n < cantidadLibros) {
 				Nodo puntero = cabeza;
 				int contador = 0;
 				while (contador < (n - 1)) {
@@ -116,7 +134,22 @@ public class Listas {
 				cantidadLibros--;
 			}
 		}
-		
+
+	}
+
+	public void MostrarOrden() {
+		Nodo puntero = cabeza;
+		if (puntero == null) {
+			System.out.println("no hay libros para mostrar");
+
+		} else {
+			while (puntero.siguiente != null) {
+				System.out.println("este libro " + puntero.libro + " el siguiente --> " + puntero.siguiente);
+				puntero = puntero.siguiente;
+			}
+			System.out.println("este libro " + puntero.libro + " el siguiente --> " + puntero.siguiente);
+
+		}
 	}
 
 }
