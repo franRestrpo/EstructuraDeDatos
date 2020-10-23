@@ -6,5 +6,7 @@ public interface ColaProceso {
 	void Eliminar();
 
 	Trabajo Obtener();
+	boolean isEmpity();
+	
 
 }
