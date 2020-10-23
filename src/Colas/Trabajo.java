@@ -34,5 +34,8 @@ public class Trabajo {
 	public void setImpreso(boolean impreso) {
 		this.impreso = impreso;
 	}
-
+	@Override
+	public String toString() {
+		return "Impresion@"+titulo+":"+autor+":"+impreso+"::"+hashCode();
+	}
 }
