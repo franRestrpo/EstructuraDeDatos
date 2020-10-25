@@ -1,4 +1,4 @@
-package ArbolBinario;
+package Arboles.ArbolBinario;
 
 public interface InterfazArbolesBinariosBusqueda <T extends Comparable> {
 

@@ -1,4 +1,4 @@
-package ListasSimpleEnlazada;
+package Listas.ListasSimpleEnlazada;
 
 
 public class Principal {

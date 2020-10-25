@@ -1,4 +1,6 @@
-package ArbolBinario;
+package Arboles.ArbolBinario;
+
+
 
 import javax.management.RuntimeErrorException;
 

@@ -1,5 +1,4 @@
-package ArbolBinario;
-
+package Arboles.ArbolBinario;
 import java.util.Arrays;
 
 public class principal {
