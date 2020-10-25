@@ -1,4 +1,4 @@
-package arbolesBinarios;
+package ArbolBinario;
 
 import java.util.Arrays;
 
@@ -14,11 +14,15 @@ public class principal {
 		
 		ArbolesBinariosBusqueda bst = new ArbolesBinariosBusqueda();
 		Arrays.asList(e1, e2, e3, e4, e5, e6).forEach(e -> bst.insertar(e));
+		
 		bst.preorden();
 		System.out.println("------------------------------");
-		bst.inorden();
+		bst.eliminar(20);
+		bst.preorden();
 		System.out.println("------------------------------");
-		bst.postorden();
+		bst.eliminar(44);
+		bst.preorden();
+		System.out.println("------------------------------");
 
 	}
 

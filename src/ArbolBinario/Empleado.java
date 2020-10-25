@@ -1,4 +1,4 @@
-package arbolesBinarios;
+package ArbolBinario;
 
 public class Empleado implements Comparable<Empleado> {
 	private int id;
