@@ -87,15 +87,9 @@ public class ArbolesBinariosBusqueda implements InterfazArbolesBinariosBusqueda<
 
 	@Override
 	public void eliminar(int id) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "" + valor;
-	}
 	
 	private void preordenImp(String prefijo) {
 		if (valor != null) {
